@@ -1,0 +1,27 @@
+Sensor Setup
+------------
+Sensor 1: Trigger Pin: IO8
+Sensor 1: Echo Pin: IO9
+
+Sensor 2: Trigger Pin: IO7
+Sensor 2: Echo Pin: IO6
+
+COMMANDS TO EXECUTED THE DRIVERs
+--------------------------------
+PLATFORM_DRIVER
+1.ifconfig enp0s20f6 192.168.1.5 netmask 255.255.0.0 up 
+	Use the above command to assign the Galileo board ip_address which is used in the makefile
+
+2. Update the Makefile paths for the scp commands as per the local directory where you copy it.
+	Scp commands are on line 9 and 10 and copy the /platform_device.ko and /platform_driver.ko to /
+NOTE: Currently they are configured to my local directory
+
+3. Once the platform_driver.ko and platform_device.ko are copied to ~/home/ directory of your Galileo Board.
+	cd /home/
+	insmod platform_device.ko devices=2   (NOTE: That the devices=x, where x is any no uptil 9)
+	insmod platform_driver.ko
+4. This insmod can be done in any order. Either first will work.
+5. After including the devices navigate to /sys/class/HCSR/ directory to confirm the creation of devices
+	and to /sys/class/HCSR/HCSR_x to confirm the creation of device attributes
+6. cat device_attribute, echo x > device_attribute commands can be used to modify their values from sysfs interface
+
