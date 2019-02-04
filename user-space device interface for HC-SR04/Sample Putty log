@@ -1,0 +1,194 @@
+root@quark:/home# insmod HCSR_Driver_Backup.ko devices=3
+[  104.320153] Registered HCSR_0 with minor no:57
+[  104.343959] Registered HCSR_1 with minor no:56
+[  104.355798] Registered HCSR_2 with minor no:55
+[  104.360417] HCSR driver registered with 3 devices created
+root@quark:/home# ./hcsrtester 
+[  113.139641] device match found
+[  113.142854] Opened HCSR_0 with minor no:57
+[  113.147085] device match found
+[  113.150312] Opened HCSR_1 with minor no:56
+DEVICES OPENED[  113.158967] Configuring Pins related to IO9
+
+
+[  113.169038] Configured pin gpio4 as input which cannot sleep
+[  113.185726] Configured pin gpio22 as input which can sleep
+[  113.204468] Configured pin gpio70  which can sleep
+[  113.209457] Interrupt 58 configured for device HCSR_0 on GPIO9
+[  113.215461] Configuring Pins related to IO8
+[  113.226387] Configured pin gpio40 as output low which can sleep
+[  113.236377] Configuring Pins related to IO7
+[  113.247973] Configured pin gpio38 as output low which can sleep
+[  113.254072] Configuring Pins related to IO6
+[  113.265645] Configured pin gpio1 as input which cannot sleep
+[  113.279025] Configured pin gpio20 as input which can sleep
+[  113.291553] Configured pin gpio68  which can sleep
+[  113.296545] Interrupt 55 configured for device HCSR_1 on GPIO6
+[  113.304651] Initiating new measurement for device HCSR_0
+[  113.311604] 
+[  113.311604] Sample Collection for HCSR_0 write operation
+[  113.320252] Distance Measured for HCSR_0:12
+[  113.628933] Distance Measured for HCSR_0:12
+[  114.235568] Rejecting distance measurement of 5172 for HCSR_0 as it is greater than 400cm
+[  114.247143] Distance Measured for HCSR_0:12
+[  114.551928] Initiating new measurement for device HCSR_1
+[  114.557907] 
+[  114.557907] Sample Collection for HCSR_1 write operation
+[  114.869387] Rejecting distance measurement of 5188 for HCSR_0 as it is greater than 400cm
+[  115.180526] Rejecting distance measurement of 5352 for HCSR_1 as it is greater than 400cm
+[  115.191602] Distance Measured for HCSR_1:24
+[  115.799193] Clearing FIFO buffer of HCSR_0
+[  115.803432] Measurement in progress from HCSR_0
+[  115.808471] Rejecting distance measurement of 5328 for HCSR_0 as it is greater than 400cm
+[  116.120424] Distance Measured for HCSR_0:12
+[  116.423780] Writing at position 1 of HCSR_0 with distance:12 and time:52844484971
+[  116.447494] Rejecting distance measurement of 5662 for HCSR_1 as it is greater than 400cm
+[  116.759047] Rejecting distance measurement of 5209 for HCSR_1 as it is greater than 400cm
+[  117.070527] Distance Measured for HCSR_1:24
+[  117.376835] FIFO buffer of device HCSR_1 is empty
+[  117.381711] FIFO buffer of device HCSR_1 is empty
+[  117.386460] Measurement in progress
+[  117.390216] FIFO buffer of device HCSR_1 is empty
+[  117.395976] Rejecting distance measurement of 5519 for HCSR_1 as it is greater than 400cm
+Distance -1 and time 0
+[  117.706746] Rejecting distance measurement of 5195 for HCSR_1 as it is greater than 400cm
+[  118.023412] Rejecting distance measurement of 5298 for HCSR_1 as it is greater than 400cm
+[  118.333226] Writing at position 1 of HCSR_1 with distance:24 and time:53606498781
+[  118.705550] Initiating new measurement for device HCSR_0
+[  118.712442] Initiating new measurement for device HCSR_1
+[  118.718082] 
+[  118.718082] Sample Collection for HCSR_0 write operation
+[  118.727568] 
+[  118.727568] Sample Collection for HCSR_1 write operation
+[  118.734729] Measurement in progress from HCSR_0
+[  119.043879] Rejecting distance measurement of 12088 for HCSR_1 as it is greater than 400cm
+[  119.355490] Rejecting distance measurement of 10596 for HCSR_0 as it is greater than 400cm
+[  119.668544] Rejecting distance measurement of 10594 for HCSR_1 as it is greater than 400cm
+[  119.980882] Rejecting distance measurement of 5221 for HCSR_1 as it is greater than 400cm
+[  120.292932] Rejecting distance measurement of 15974 for HCSR_0 as it is greater than 400cm
+[  120.604650] Rejecting distance measurement of 10581 for HCSR_1 as it is greater than 400cm
+[  120.916378] Rejecting distance measurement of 10573 for HCSR_0 as it is greater than 400cm
+[  121.229377] Rejecting distance measurement of 10595 for HCSR_1 as it is greater than 400cm
+[  121.541067] Rejecting distance measurement of 10594 for HCSR_0 as it is greater than 400cm
+[  121.852618] Rejecting distance measurement of 10569 for HCSR_1 as it is greater than 400cm
+[  122.165131] Rejecting distance measurement of 10585 for HCSR_0 as it is greater than 400cm
+[  122.475796] Measurement in progress from HCSR_1
+[  122.481605] Rejecting distance measurement of 10668 for HCSR_1 as it is greater than 400cm
+[  122.794068] Rejecting distance measurement of 10667 for HCSR_0 as it is greater than 400cm
+[  123.103826] Writing at position 1 of HCSR_0 with distance:12 and time:55510330565
+[  123.113223] Rejecting distance measurement of 5490 for HCSR_1 as it is greater than 400cm
+[  123.425740] Rejecting distance measurement of 5226 for HCSR_1 as it is greater than 400cm
+[  123.736192] Writing at position 1 of HCSR_1 with distance:24 and time:55762693053
+[  124.481636] Initiating new measurement for device HCSR_0
+[  124.487419] 
+[  124.487419] Sample Collection for HCSR_0 write operation
+[  124.497572] Rejecting distance measurement of 23838 for HCSR_0 as it is greater than 400cm
+[  124.809393] Rejecting distance measurement of 5213 for HCSR_0 as it is greater than 400cm
+[  125.120994] Rejecting distance measurement of 5210 for HCSR_0 as it is greater than 400cm
+[  125.432721] Rejecting distance measurement of 5213 for HCSR_0 as it is greater than 400cm
+[  125.744212] Distance Measured for HCSR_0:24
+[  126.052664] Rejecting distance measurement of 5225 for HCSR_0 as it is greater than 400cm
+[  126.364185] Distance Measured for HCSR_0:24
+[  126.670641] Writing at position 2 of HCSR_0 with distance:16 and time:56933761235
+[  126.678232] Initiating new measurement for device HCSR_0
+[  126.686379] 
+[  126.686379] Sample Collection for HCSR_0 write operation
+[  126.695566] Rejecting distance measurement of 5620 for HCSR_0 as it is greater than 400cm
+[  127.007214] Rejecting distance measurement of 5211 for HCSR_0 as it is greater than 400cm
+[  127.320132] Rejecting distance measurement of 5233 for HCSR_0 as it is greater than 400cm
+[  127.631696] Distance Measured for HCSR_0:24
+[  127.939139] Rejecting distance measurement of 5208 for HCSR_0 as it is greater than 400cm
+[  128.250782] Rejecting distance measurement of 5211 for HCSR_0 as it is greater than 400cm
+[  128.562501] Rejecting distance measurement of 5213 for HCSR_0 as it is greater than 400cm
+[  128.872311] Writing at position 3 of HCSR_0 with distance:17 and time:57812395045
+[  132.880298] Initiating new measurement for device HCSR_1
+[  132.886079] 
+[  132.886079] Sample Collection for HCSR_1 write operation
+[  132.896212] Rejecting distance measurement of 162757 for HCSR_1 as it is greater than 400cm
+[  133.207917] Rejecting distance measurement of 5209 for HCSR_1 as it is greater than 400cm
+[  133.519501] Rejecting distance measurement of 5210 for HCSR_1 as it is greater than 400cm
+[  133.831245] Rejecting distance measurement of 5213 for HCSR_1 as it is greater than 400cm
+[  134.142916] Distance Measured for HCSR_1:24
+[  134.450343] Rejecting distance measurement of 5208 for HCSR_1 as it is greater than 400cm
+[  134.762048] Rejecting distance measurement of 5213 for HCSR_1 as it is greater than 400cm
+[  135.071395] Measurement in progress from HCSR_1
+[  135.080265] Rejecting distance measurement of 5323 for HCSR_1 as it is greater than 400cm
+[  135.391234] Rejecting distance measurement of 5201 for HCSR_1 as it is greater than 400cm
+[  135.699917] Writing at position 1 of HCSR_1 with distance:24 and time:60537128327
+[  137.076165] Initiating new measurement for device HCSR_1
+[  137.083215] 
+[  137.083215] Sample Collection for HCSR_1 write operation
+[  137.092348] Rejecting distance measurement of 23764 for HCSR_1 as it is greater than 400cm
+[  137.403957] Rejecting distance measurement of 5209 for HCSR_1 as it is greater than 400cm
+[  137.715438] Rejecting distance measurement of 5208 for HCSR_1 as it is greater than 400cm
+[  138.026931] Rejecting distance measurement of 5208 for HCSR_1 as it is greater than 400cm
+[  138.356048] Rejecting distance measurement of 5512 for HCSR_1 as it is greater than 400cm
+[  138.720185] Distance Measured for HCSR_1:24
+[  139.027620] Rejecting distance measurement of 5209 for HCSR_1 as it is greater than 400cm
+[  139.336934] Initiating new measurement for device HCSR_0
+[  139.345038] 
+[  139.345038] Sample Collection for HCSR_0 write operation
+[  139.353992] Rejecting distance measurement of 5464 for HCSR_1 as it is greater than 400cm
+[  139.665736] Rejecting distance measurement of 185505 for HCSR_0 as it is greater than 400cm
+[  139.977562] Rejecting distance measurement of 10576 for HCSR_1 as it is greater than 400cm
+[  140.288193] Writing at position 2 of HCSR_1 with distance:24 and time:62368199115
+[  140.297069] Rejecting distance measurement of 10707 for HCSR_0 as it is greater than 400cm
+[  140.609846] Rejecting distance measurement of 5229 for HCSR_0 as it is greater than 400cm
+[  140.921863] Distance Measured for HCSR_0:23
+[  141.231888] Rejecting distance measurement of 5252 for HCSR_0 as it is greater than 400cm
+[  141.542270] Measurement in progress from HCSR_0
+[  141.548007] Rejecting distance measurement of 5285 for HCSR_0 as it is greater than 400cm
+[  141.860560] Rejecting distance measurement of 5227 for HCSR_0 as it is greater than 400cm
+[  142.169223] Writing at position 3 of HCSR_0 with distance:17 and time:63118872851
+[  143.547060] Initiating new measurement for device HCSR_0
+[  143.554043] 
+[  143.554043] Sample Collection for HCSR_0 write operation
+[  143.563206] Rejecting distance measurement of 23788 for HCSR_0 as it is greater than 400cm
+[  143.874915] Rejecting distance measurement of 5211 for HCSR_0 as it is greater than 400cm
+[  144.186512] Distance Measured for HCSR_0:24
+[  144.493992] Rejecting distance measurement of 5208 for HCSR_0 as it is greater than 400cm
+[  144.805498] Rejecting distance measurement of 5209 for HCSR_0 as it is greater than 400cm
+[  145.117221] Rejecting distance measurement of 5212 for HCSR_0 as it is greater than 400cm
+[  145.428788] Distance Measured for HCSR_0:24
+[  145.735189] Writing at position 4 of HCSR_0 with distance:19 and time:64541964489
+[  148.554199] 
+[  148.554199] 
+[  148.554199] Device:HCSR_0 Details
+[  148.560629] ---------------------
+[  148.563984] Minor No:57
+[  148.566456] Trigger Pin:8 and Echo Pin:9
+[  148.570524] Interrupt configured on GPIO9 with IRQ Number:58
+[  148.576232] 5 samples collected with sampling period 300,for each measurement
+[  148.583486] Buffer Data
+[  148.585976] Distance:12 and time:55510330565
+[  148.590368] Distance:16 and time:56933761235
+[  148.594679] Distance:17 and time:63118872851
+[  148.598978] Distance:19 and time:64541964489
+[  148.603363] Erasing data of HCSR_0 and reinitializing it
+[  148.608724] Freeing IRQ 58 of HCSR_0 on IO9
+[  148.620155] Freeing Pins related to IO9
+[  148.627103] Freed pin 4
+[  148.638737] Freed pin 22
+[  148.644810] Freed pin 70
+[  148.647384] Freeing Pins related to IO8
+[  148.662789] Freed pin 40
+[  148.665407] 
+[  148.665407] 
+[  148.665407] Device:HCSR_1 Details
+[  148.671838] ---------------------
+[  148.675194] Minor No:56
+[  148.677665] Trigger Pin:7 and Echo Pin:6
+[  148.681709] Interrupt configured on GPIO6 with IRQ Number:55
+[  148.687416] 7 samples collected with sampling period 300,for each measurement
+[  148.694673] Buffer Data
+[  148.697163] Distance:24 and time:60537128327
+[  148.701558] Distance:24 and time:62368199115
+[  148.705870] Erasing data of HCSR_1 and reinitializing it
+[  148.711312] Freeing IRQ 55 of HCSR_1 on IO6
+[  148.731710] Freeing Pins related to IO7
+[  148.738232] Freed pin 38
+[  148.740934] Freeing Pins related to IO6
+[  148.750782] Freed pin 1
+[  148.755905] Freed pin 20
+[  148.764324] Freed pin 68
+root@quark:/home# 
